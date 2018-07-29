@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.iftekharalamtuhin.bustrackersuite.ProfileActivity">
+
+    <Button
+        android:id="@+id/btLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="38dp"
+        android:layout_marginStart="38dp"
+        android:text="Log Out" />
+
+    <Button
+        android:id="@+id/btEditProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btLogout"
+        android:layout_marginEnd="36dp"
+        android:text="Edit Profile" />
+
+    <ImageView
+        android:id="@+id/ivProPic"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="94dp"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/tvProBusType"
+        android:layout_width="400sp"
+        android:layout_height="40sp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/ivProPic"
+        android:layout_marginTop="88dp"
+        android:text="  Bus Type: "
+        android:textSize="28dp" />
+
+    <TextView
+        android:id="@+id/tvProBusRoute"
+        android:layout_width="400sp"
+        android:layout_height="40sp"
+        android:textSize="28dp"
+        android:layout_alignStart="@+id/tvProBusType"
+        android:layout_below="@+id/tvProBusType"
+        android:layout_marginTop="31dp"
+        android:text="  Bus Route: " />
+
+    <TextView
+        android:id="@+id/tvProEmail"
+        android:layout_width="400sp"
+        android:layout_height="40sp"
+        android:layout_alignStart="@+id/tvProBusRoute"
+        android:layout_below="@+id/tvProBusRoute"
+        android:layout_marginTop="38dp"
+        android:text="  Email: "
+        android:textSize="20dp"
+         />
+
+</RelativeLayout>

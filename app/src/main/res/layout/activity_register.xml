@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.iftekharalamtuhin.bustrackersuite.RegisterActivity">
+
+
+    <TextView
+        android:id="@+id/tvSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:textColor="#000"
+        android:text="SIgn Up to BusTrackerSuite"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:hint="Enter email:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/tvSignUp"
+        android:layout_marginTop="46dp"
+        android:width="400dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:hint="Password:"
+        android:width="400dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/etBusRoute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:hint="Bus Route:"
+        android:width="400dp"
+        />
+
+    <EditText
+        android:id="@+id/etBusType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/etEmail"
+        android:layout_below="@+id/etBusRoute"
+        android:layout_marginTop="38dp"
+        android:width="400dp"
+        android:ems="10"
+        android:hint="Bus Type:" />
+
+    <Button
+        android:id="@+id/btRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etBusType"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="Register" />
+
+    <TextView
+        android:id="@+id/tvAlreadyHaveAnAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:text="Already Registered? Log In Here"
+        android:textColor="#000"
+        />
+
+</RelativeLayout>
